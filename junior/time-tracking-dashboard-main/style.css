@@ -134,6 +134,10 @@ main {
     padding-top: 30px;
     padding-right: 30px;
     position: relative;
+    transition: background-color 0.5s;
+}
+.card-body:hover {
+    background-color: var(--desaturated-blue);
 }
 @media screen and (max-width: 991px) {
     main{
