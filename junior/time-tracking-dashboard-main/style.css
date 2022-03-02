@@ -74,6 +74,10 @@ main {
 .timeframes {
     padding-left: 30px;
 }
+.timeframes p:hover{ 
+    cursor: pointer;
+    color:#fff;
+}
 .daily.active,
 .weekly.active,
 .monthly.active{
