@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Article preview component](https://github.com/runadb/article-preview-component)
-- Live Site URL: [Article preview component](https://runadb.github.io/article-preview-component/)
+- Solution URL: [Article preview component](https://github.com/runadb/frontendmentor-challenges/tree/master/newbie/article-preview-component-master)
+- Live Site URL: [Article preview component](https://runadb.github.io/frontendmentor-challenges/newbie/article-preview-component-master/index.html/)
 
 ## My process
 
