@@ -116,7 +116,7 @@
                 }
             })
             
-            d.addEventListener("click", e =>{
+            d.querySelector('.timeframes').addEventListener("click", e =>{
                 if(e.target.matches(".daily")){
                     $daily.classList.add("active")
                     $weekly.classList.remove("active")
