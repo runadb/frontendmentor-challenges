@@ -1,0 +1,72 @@
+:root{
+    --font: 'Inter', sans-serif;
+    --blue: hsl(246, 80%, 60%);
+    --light-red: hsl(15, 100%, 70%);
+    --soft-blue: hsl(195, 74%, 62%);
+    --light-pink: hsl(348, 100%, 68%);
+    --lime-green: hsl(145, 58%, 55%);
+    --violet: hsl(264, 64%, 52%);
+    --soft-orange: hsl(43, 84%, 65%);
+    --very-dark-blue: hsl(226, 43%, 10%);
+    --dark-blue: hsl(235, 46%, 20%);
+    --desaturated-blue: hsl(235, 45%, 61%);
+    --pale-blue: hsl(236, 100%, 87%);
+}
+html{
+    box-sizing: border-box;
+    font-family: var(--font);
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+main {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.slide-item{
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: opacity 0.5s;
+}
+.controls{
+    text-align: center;
+    position: relative;
+    top: 64px;
+}
+.wrapper-comment{
+    z-index: 1;
+    margin-right: -26px;
+    position: relative;
+    top: 65px;
+}
+.wrapper-comment img{
+    position: absolute;
+    left: 13%;
+    top: -30px;
+}
+.wrapper-comment p:first-of-type{
+    font-size: 32px;
+    font-weight: 300;
+}
+.wrapper-img > img{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.photo img{
+    position: relative;
+    top: 65px;
+    right: 94px;
+}
