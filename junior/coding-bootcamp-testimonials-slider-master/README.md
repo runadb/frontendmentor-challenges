@@ -37,8 +37,8 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Coding bootcamp testimonials slider](https://github.com/runadb/frontendmentor-challenges/tree/master/junior/coding-bootcamp-testimonials-slider-master)
+- Live Site URL: [Coding bootcamp testimonials slider](https://runadb.github.io/frontendmentor-challenges/junior/coding-bootcamp-testimonials-slider-master/index.html)
 
 ## My process
 
