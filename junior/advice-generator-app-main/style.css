@@ -1,0 +1,90 @@
+:root{
+    --font: 'Manrope', sans-serif;
+    --light-cyan: hsl(193, 38%, 86%);
+    --neon-green: hsl(150, 100%, 66%);    
+    --grayish-blue: hsl(217, 19%, 38%);
+    --dark-grayish-blue: hsl(217, 19%, 24%);
+    --dark-blue: hsl(218, 23%, 16%);
+}
+html{
+    box-sizing: border-box;
+    font-family: var(--font);
+    font-size: 16px;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+body{
+    margin: 0;
+    overflow-x: hidden;
+    background-color: var(--dark-blue);
+    color: var(--light-cyan);
+}
+main {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 98vh;
+}
+.card{
+    background-color: var(--dark-grayish-blue);
+    color: var(--light-cyan);
+    max-width: 550px;
+    border-radius: 15px;
+    text-align: center;
+    position: relative;
+    padding: 30px;
+}
+.card > img{
+    margin-bottom: 40px;
+}
+.advice-id{
+    color: var(--neon-green);
+    letter-spacing: 4px;
+}
+.advice-text{
+    font-weight: 800;
+    font-size: 28px;
+}
+button{
+    display: block;
+    position: absolute;
+    bottom: -34px;
+    padding: 20px 20px;
+    border-radius: 50%;
+    background-color: var(--neon-green);
+    margin-left: auto;
+    margin-right: auto;
+    width: 64px;
+    right: 0;
+    left: 0;
+    border: 0;
+}
+button:hover{
+    box-shadow: 0px 0px 43px 0px var(--neon-green);
+}
+button img{
+    display: block;
+}
+@media screen and (max-width: 991px) {
+    main{
+        max-width: 375px;
+    }
+    .advice-text {
+        font-weight: 800;
+        font-size: 20px;
+    }
+    .card > img {
+        width: 100%;
+    }
+    .advice-id {
+        font-size: 12px;
+    }
+}
