@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Interactive comments section</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -13,14 +15,120 @@
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
-  <!-- Pull dynamic content from the data.json file -->
+<main>
+  <div class="section-comments">
+    <div class="box-comment">
+      <div class="box-rating">
+        <div class="btn-rating">
+          <button class="btn-plus"><img src="./images/icon-plus.svg" alt=""></button>
+          <span class="number-rating">12</span>
+          <button class="btn-minus"><img src="./images/icon-minus.svg" alt=""></button>
+        </div>
+      </div>
+      <div class="comment">
+        <div class="head-comment">
+          <div class="author">
+            <img src="./images/avatars/image-amyrobson.webp" alt="" class="avatar">
+            <p class="author-name">amyrobson</p>
+            <p class="created-at">1 month ago</p>
+          </div>
+          <button class="btn-reply"><img src="./images/icon-reply.svg" alt=""> Reply</button>
+        </div>
+        <div class="body-comment">
+          <p>Impressive! Though it seems the drag feature could be improved. But overall it looks incredible. You've nailed the design and the responsiveness at various breakpoints works really well.</p>
+        </div>
+      </div>
+    </div>
+    <div class="box-comment">
+      <div class="box-rating">
+        <div class="btn-rating">
+          <button class="btn-plus"><img src="./images/icon-plus.svg" alt=""></button>
+          <span class="number-rating">12</span>
+          <button class="btn-minus"><img src="./images/icon-minus.svg" alt=""></button>
+        </div>
+      </div>
+      <div class="comment">
+        <div class="head-comment">
+          <div class="author">
+            <img src="./images/avatars/image-amyrobson.webp" alt="" class="avatar">
+            <p class="author-name">amyrobson</p>
+            <p class="created-at">1 month ago</p>
+          </div>
+          <button class="btn-reply"><img src="./images/icon-reply.svg" alt=""> Reply</button>
+        </div>
+        <div class="body-comment">
+          <p>Impressive! Though it seems the drag feature could be improved. But overall it looks incredible. You've nailed the design and the responsiveness at various breakpoints works really well.</p>
+        </div>
+      </div>
+    </div>
+    <div class="section-reply">
+      <div class="box-comment">
+        <div class="box-rating">
+          <div class="btn-rating">
+            <button class="btn-plus"><img src="./images/icon-plus.svg" alt=""></button>
+            <span class="number-rating">12</span>
+            <button class="btn-minus"><img src="./images/icon-minus.svg" alt=""></button>
+          </div>
+        </div>
+        <div class="comment">
+          <div class="head-comment">
+            <div class="author">
+              <img src="./images/avatars/image-amyrobson.webp" alt="" class="avatar">
+              <p class="author-name">amyrobson</p>
+              <p class="created-at">1 month ago</p>
+            </div>
+            <button class="btn-reply"><img src="./images/icon-reply.svg" alt=""> Reply</button>
+          </div>
+          <div class="body-comment">
+            <p><span class="replying-to">@maxblagun</span> Impressive! Though it seems the drag feature could be improved. But overall it looks incredible. You've nailed the design and the responsiveness at various breakpoints works really well.</p>
+          </div>
+        </div>
+      </div>
+      <div class="box-comment">
+        <div class="box-rating">
+          <div class="btn-rating">
+            <button class="btn-plus"><img src="./images/icon-plus.svg" alt=""></button>
+            <span class="number-rating">12</span>
+            <button class="btn-minus"><img src="./images/icon-minus.svg" alt=""></button>
+          </div>
+        </div>
+        <div class="comment">
+          <div class="head-comment">
+            <div class="author">
+              <img src="./images/avatars/image-amyrobson.webp" alt="" class="avatar">
+              <p class="author-name">amyrobson</p>
+              <span class="you">you</span>
+              <p class="created-at">1 month ago</p>
+            </div>
+            <div class="wrapper-btns">
+              <button class="btn-delete"><img src="./images/icon-delete.svg" alt=""> Delete</button>
+              <button class="btn-edit"><img src="./images/icon-edit.svg" alt=""> Edit</button>
+            </div>
+          </div>
+          <div class="body-comment">
+            <p><span class="replying-to">@ramsesmiron</span> Impressive! Though it seems the drag feature could be improved. But overall it looks incredible. You've nailed the design and the responsiveness at various breakpoints works really well.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="wrapper-form">
+    <img class="avatar" src="./images/avatars/image-juliusomo.png" alt="">
+    <form class="form-add-comment" action="">
+      <textarea  id="add-comment" placeholder="Add a comment..." cols="30" rows="6"></textarea>
+      <button class="btn-send" type="submit">SEND</button>
+    </form>
+  </div>
+</main>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://github.com/runadb">Roly Loayza</a>.
   </div>
+  <script src="./fetch.js"></script>
 </body>
 </html>
